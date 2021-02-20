@@ -4,16 +4,19 @@
 <meta type="system"> 
 <!--
 this is an app that is needed to run the system
-the system type can also be used for apps that change important data (and this tag is needed for some permissions)
+the system type can also be used for apps that change important data
 -->
 <meta name="homeScreen">
+<meta scopes="all">
 <meta friendlyName="Home Screen">
-<css>systemapps/homescreen/main.css</css>
+<css>systemapps/homescreen/main.css</css> <!-- Do not use <link> tag for stylesheet.-->
 <!--
 all this can be shortened to
 <meta type="system" name="homeScreen" friendlyName="Home Screen">
 -->
 <body>
-<div class="app"><span class="title">
+  <div class="apps">
+    <div id="filer" class="app"><img src="systemapps/filer/logo.png"><span class="title">Filer</span><span class="subtitle">Access your files</span></div>
+  </div>
 </body>
 </html>
